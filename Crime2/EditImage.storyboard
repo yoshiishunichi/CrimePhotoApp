@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="S1s-cP-hTN">
+            <objects>
+                <viewController storyboardIdentifier="EditImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sLG-X1-5F6" customClass="EditImageViewController" customModule="Crime2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXk-RP-qfm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット-2016-10-08-23.33.04-705x460" translatesAutoresizingMaskIntoConstraints="NO" id="N4k-By-pZs">
+                                <rect key="frame" x="145" y="10" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="N4k-By-pZs" secondAttribute="height" multiplier="1:1" id="Lke-Sw-ypj"/>
+                                    <constraint firstAttribute="width" constant="30" id="sp8-70-622"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uyM-8N-6Hd">
+                                <rect key="frame" x="35" y="55" width="250" height="180"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-bA-LXH">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfh-ed-ZpF">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="10"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="gSA-57-kbX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="容疑者の名前" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14o-l6-XNY">
+                                                <rect key="frame" x="0.0" y="10" width="250" height="24"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Jm-xr-Q7M">
+                                        <rect key="frame" x="0.0" y="49" width="250" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年齢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5O-HO-ucR">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="10"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="OpY-pR-Acp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="容疑者の年齢" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sPy-o2-Gwr">
+                                                <rect key="frame" x="0.0" y="10" width="250" height="23.5"/>
+                                                <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tUS-R4-jKH">
+                                        <rect key="frame" x="0.0" y="97.5" width="250" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="職業" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSz-5R-7Kh">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="10"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="7t0-vi-Qpy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="容疑者の職業" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ke-uw-hIk">
+                                                <rect key="frame" x="0.0" y="10" width="250" height="24"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-Ze-XQE">
+                                        <rect key="frame" x="0.0" y="146.5" width="250" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="犯行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrB-6a-0A9">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="10"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="vDf-Gw-cTN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="逮捕された理由" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5el-27-E68">
+                                                <rect key="frame" x="0.0" y="10" width="250" height="23.5"/>
+                                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="VvU-Ud-5KS"/>
+                                    <constraint firstAttribute="width" constant="250" id="in8-zO-UTW"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空欄があります" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWt-di-ABL">
+                                <rect key="frame" x="110" y="243" width="100" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年齢は半角の整数です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soa-qe-w1W">
+                                <rect key="frame" x="88.5" y="268" width="143" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpI-D4-3KW">
+                                <rect key="frame" x="115" y="345" width="90" height="90"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SpI-D4-3KW" secondAttribute="height" multiplier="1:1" id="UgB-hC-fvf"/>
+                                    <constraint firstAttribute="width" constant="90" id="pWj-6w-XEr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="作成!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dpM-3Z-Ne4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bWt-di-ABL" firstAttribute="top" secondItem="uyM-8N-6Hd" secondAttribute="bottom" constant="8" id="93o-5Q-bEW"/>
+                            <constraint firstItem="SpI-D4-3KW" firstAttribute="top" secondItem="Soa-qe-w1W" secondAttribute="bottom" constant="60" id="HF8-4G-R8g"/>
+                            <constraint firstItem="SpI-D4-3KW" firstAttribute="centerX" secondItem="lXk-RP-qfm" secondAttribute="centerX" id="MSr-rS-eLx"/>
+                            <constraint firstItem="bWt-di-ABL" firstAttribute="centerX" secondItem="lXk-RP-qfm" secondAttribute="centerX" id="P36-2u-3XL"/>
+                            <constraint firstItem="N4k-By-pZs" firstAttribute="centerX" secondItem="lXk-RP-qfm" secondAttribute="centerX" id="PcN-Im-7Wd"/>
+                            <constraint firstItem="uyM-8N-6Hd" firstAttribute="top" secondItem="N4k-By-pZs" secondAttribute="bottom" constant="15" id="RQR-WR-J50"/>
+                            <constraint firstItem="Soa-qe-w1W" firstAttribute="top" secondItem="bWt-di-ABL" secondAttribute="bottom" constant="8" id="gbW-Xa-V2c"/>
+                            <constraint firstItem="uyM-8N-6Hd" firstAttribute="centerX" secondItem="lXk-RP-qfm" secondAttribute="centerX" id="i8h-Z9-n4o"/>
+                            <constraint firstItem="Soa-qe-w1W" firstAttribute="centerX" secondItem="lXk-RP-qfm" secondAttribute="centerX" id="kkZ-TV-Wkl"/>
+                            <constraint firstItem="N4k-By-pZs" firstAttribute="top" secondItem="dpM-3Z-Ne4" secondAttribute="top" constant="10" id="rwE-GB-9Nd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="LJK-Ew-jdO"/>
+                    <connections>
+                        <outlet property="ageAlertLabel" destination="Soa-qe-w1W" id="NjY-mE-cYg"/>
+                        <outlet property="ageLabel" destination="a5O-HO-ucR" id="15Q-6v-eEq"/>
+                        <outlet property="ageTextField" destination="sPy-o2-Gwr" id="55N-nr-M0f"/>
+                        <outlet property="allView" destination="lXk-RP-qfm" id="3ci-da-WBK"/>
+                        <outlet property="choicedImageView" destination="N4k-By-pZs" id="HhF-w1-L2d"/>
+                        <outlet property="createButton" destination="SpI-D4-3KW" id="eDf-Sr-Va3"/>
+                        <outlet property="crimeLabel" destination="zrB-6a-0A9" id="QnL-Gn-IbD"/>
+                        <outlet property="crimeTextField" destination="5el-27-E68" id="q9o-ky-S6k"/>
+                        <outlet property="jobLabel" destination="eSz-5R-7Kh" id="cDF-fM-sUt"/>
+                        <outlet property="jobTextField" destination="2ke-uw-hIk" id="Ela-w0-SZB"/>
+                        <outlet property="nameLabel" destination="gfh-ed-ZpF" id="MWm-Yv-PtV"/>
+                        <outlet property="nameTextField" destination="14o-l6-XNY" id="HJM-7O-r8F"/>
+                        <outlet property="spaceAlertLabel" destination="bWt-di-ABL" id="eKC-dQ-Zyo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZS2-FO-vRW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="-151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="スクリーンショット-2016-10-08-23.33.04-705x460" width="352.5" height="230"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

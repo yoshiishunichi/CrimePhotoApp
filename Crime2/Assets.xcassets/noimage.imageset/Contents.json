@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "スクリーンショット-2016-10-08-23.33.04-705x460.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "スクリーンショット-2016-10-08-23.33.04-705x460-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "スクリーンショット-2016-10-08-23.33.04-705x460-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

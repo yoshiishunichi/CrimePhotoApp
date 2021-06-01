@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="rzw-ov-hZ2">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kxP-iw-cuU" customClass="ResultViewController" customModule="CrimePhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lqw-CE-s2c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHO-eO-QyN">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="yl1-sa-uf0">
+                                        <connections>
+                                            <action selector="showActivityView:" destination="kxP-iw-cuU" id="TiU-Ov-f9Z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="容 疑 者 画 像 完 成 !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3A-uE-0nN">
+                                <rect key="frame" x="82.5" y="80" width="155" height="99"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓シェアと保存はこのボタンから！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aku-9Q-M2X">
+                                <rect key="frame" x="16" y="500.5" width="177.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cEQ-s7-Rbh">
+                                <rect key="frame" x="5" y="187" width="310" height="174"/>
+                                <color key="backgroundColor" red="0.0" green="0.96078431369999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="PSq-ql-krt"/>
+                                    <constraint firstAttribute="width" secondItem="cEQ-s7-Rbh" secondAttribute="height" multiplier="16:9" id="tPt-ir-eVX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7P-sb-ZbY">
+                                <rect key="frame" x="52.5" y="381" width="215" height="30"/>
+                                <state key="normal" title="開発者にカフェインと本を送る"/>
+                                <connections>
+                                    <action selector="kakinButton:" destination="kxP-iw-cuU" eventType="touchUpInside" id="Lyp-BE-ZUJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(押すと開発者のほしいものリストが開きます)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtR-Xl-Y6G">
+                                <rect key="frame" x="33" y="413" width="254.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cEQ-s7-Rbh" firstAttribute="centerY" secondItem="lqw-CE-s2c" secondAttribute="centerY" constant="-10" id="5xo-QV-QHk"/>
+                            <constraint firstItem="xHO-eO-QyN" firstAttribute="leading" secondItem="lqw-CE-s2c" secondAttribute="leading" id="DA9-8i-wQn"/>
+                            <constraint firstItem="v3A-uE-0nN" firstAttribute="top" secondItem="F2n-QU-FLc" secondAttribute="top" constant="80" id="NEc-G0-Kj6"/>
+                            <constraint firstItem="cEQ-s7-Rbh" firstAttribute="top" secondItem="v3A-uE-0nN" secondAttribute="bottom" constant="8" symbolic="YES" id="NYg-PG-gXp"/>
+                            <constraint firstItem="vtR-Xl-Y6G" firstAttribute="top" secondItem="W7P-sb-ZbY" secondAttribute="bottom" constant="2" id="Q2i-tq-c1p"/>
+                            <constraint firstItem="xHO-eO-QyN" firstAttribute="top" secondItem="aku-9Q-M2X" secondAttribute="bottom" constant="10" id="SJn-jx-66R"/>
+                            <constraint firstItem="W7P-sb-ZbY" firstAttribute="centerX" secondItem="lqw-CE-s2c" secondAttribute="centerX" id="dxt-vj-zQx"/>
+                            <constraint firstItem="cEQ-s7-Rbh" firstAttribute="centerX" secondItem="lqw-CE-s2c" secondAttribute="centerX" id="fn8-ao-wY3"/>
+                            <constraint firstItem="xHO-eO-QyN" firstAttribute="bottom" secondItem="F2n-QU-FLc" secondAttribute="bottom" id="kfP-bR-vHZ"/>
+                            <constraint firstItem="v3A-uE-0nN" firstAttribute="centerX" secondItem="lqw-CE-s2c" secondAttribute="centerX" id="lK9-K1-Li9"/>
+                            <constraint firstItem="xHO-eO-QyN" firstAttribute="trailing" secondItem="F2n-QU-FLc" secondAttribute="trailing" id="mwo-0A-XOs"/>
+                            <constraint firstItem="vtR-Xl-Y6G" firstAttribute="centerX" secondItem="lqw-CE-s2c" secondAttribute="centerX" id="nVW-hA-wga"/>
+                            <constraint firstItem="W7P-sb-ZbY" firstAttribute="top" secondItem="cEQ-s7-Rbh" secondAttribute="bottom" constant="20" id="xjH-Oa-qcd"/>
+                            <constraint firstItem="aku-9Q-M2X" firstAttribute="leading" secondItem="F2n-QU-FLc" secondAttribute="leading" constant="16" id="zPt-HI-EoH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F2n-QU-FLc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="LEC-Ke-Xqi"/>
+                    <connections>
+                        <outlet property="sampleImageView" destination="cEQ-s7-Rbh" id="nem-U4-ieX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFq-gy-QaK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="64"/>
+        </scene>
+    </scenes>
+</document>
